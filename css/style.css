@@ -1,0 +1,155 @@
+*, ul, li, a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+    background-color: #27e4c0;
+    background-image: linear-gradient(270deg, #27e4c0 18%, #7a8ce2 89%);
+    font-size: 25px;
+}
+
+nav ul a{
+    color: #fff;
+    padding: 7px 17px;
+    text-decoration: underline;
+    border-radius: 5px;
+}
+
+nav ul a:hover{
+    background: rgba(255, 255, 255, 0.26);
+    transition: .2s;
+}
+
+main{
+    background:rgb(224, 224, 224);
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    font-size: 13px;
+}
+
+main h1{
+    font-size: 50px;
+    color: #6574c0;
+}
+
+main p{
+    max-width: 700px;
+    color: #414141;
+}
+
+section{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    background-color: #27e4c0;
+    background-image: linear-gradient(135deg, #27e4c0 18%, #7a8ce2 89%);
+    box-shadow: 0px 0px 59px -11px rgba(33,96,222,1);
+    border: 1px solid #e0e0e0;
+}
+
+section h2{
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 20px;
+    gap: 20px;
+}
+
+legend{
+    font-size: 20px;
+    color: #494949;
+}
+
+form fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ffffff;
+
+}
+
+.dados-pessoais, .dados-profissionais{
+    background: rgba(255, 255, 255, 0.637);
+}
+
+.dados-pessoais div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dados-pessoais div label, .dados-profissionais{
+    font-size: 15px;
+    color: #494949;
+
+}
+
+.dados-pessoais div input {
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.dados-pessoais div input:focus{
+    outline: 1px solid #337ab4;
+    border: none;
+}
+
+.dados-profissionais .mod-trab, .mensagem, .experiencia{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-botoes{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form-botoes input{
+    border: none;
+    padding: 10px 20px;
+}
+
+.form-botoes input[type='reset']:hover{
+    background: rgb(255, 52, 52);
+    color: #fff;
+    font-weight: bold;
+}
+
+.form-botoes input[type='submit']{
+    color: white;
+    font-weight: bold;
+    background: rgb(98, 184, 255);
+}
+
+.form-botoes input[type='submit']:hover{
+    background: #337ab4;
+    border: 1px solid ;
+}
